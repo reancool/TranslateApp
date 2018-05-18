@@ -1,8 +1,8 @@
 ext {
     configuration = [
             package             : "name.gudong.translate",
-            buildToolsVersion   : "26.0.2",
-            compileVersion      : 26,
+            buildToolsVersion   : "27.0.3",
+            compileVersion      : 27,
             minSdk              : 16,
             minSdk21            : 21,
             targetSdk           : 25,
@@ -11,7 +11,7 @@ ext {
     ]
 
     libraries = [
-            supportVersion      : "26.0.0-alpha1",
+            supportVersion      : "27.0.1",
             dagger              : "2.0",
             rxandroid           : "1.2.1",
             retrofit            : "2.1.0",
@@ -58,6 +58,7 @@ allprojects {
         maven {
             url "https://jitpack.io"
         }
+        maven { url 'https://maven.google.com' }
     }
 }
 
